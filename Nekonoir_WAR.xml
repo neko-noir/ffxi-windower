@@ -1,0 +1,363 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+	<config
+		Debug="False"
+		ShowGearSwaps="False"
+		ShowSpellInfo="False"
+		RequireVersion="2.45"
+	/>
+	<sets>
+		<group Name="Shared">
+			<set Name="FastCast" BaseSet="Idle">
+				<lear>Loquac. Earring</lear>
+				<body>Nuevo Coselete</body>
+				<lring>Prolix Ring</lring>
+			</set>
+			<set Name="Haste" BaseSet="Idle">
+				<body>Nuevo Coselete</body>				
+				<hands>Brego Gloves</hands>
+				<waist>Bullwhip Belt</waist>
+				<legs>Rvg. Cuisses +2</legs>
+				<feet>Rvg. Calligae +2</feet>
+			</set>
+			<set Name="Standing" BaseSet="Idle">
+				<head>Ogier's Helm</head>
+				<neck>Twilight Torque</neck>
+				<body>Mekira Meikogai</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Sheltered Ring</lring>
+				<rring>Paguroidea Ring</rring>
+				<back>Mollusca Mantle</back>
+				<waist>Nierenschutz</waist>
+				<legs>Inmicus Cuisses</legs>
+				<feet>Phorcys Schuhs</feet>
+			</set>
+			<set Name="MultiCritSTR">
+				<ammo>Ravager's Orb</ammo>
+				<head>Ravager's Mask +2</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Triumph Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Rvg. Calligae +2</feet>
+			</set>
+			<set Name="MultiCritDEX">
+				<ammo>Ravager's Orb</ammo>
+				<head>Twilight Helm</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Ravager's Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Rancorous Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Rvg. Calligae +2</feet>
+			</set>
+			<set Name="MultiSTR">
+				<ammo>Ravager's Orb</ammo>
+				<head>Mekira-oto +1</head>
+				<neck>Ravager's Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Cuchulain's Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Karieyh Sollerets</feet>
+			</set>
+			<set Name="MultiSTRDEX">
+				<ammo>Ravager's Orb</ammo>
+				<head>Twilight Helm</head>
+				<neck>Ravager's Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Triumph Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Rvg. Mufflers +1</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Cuchulain's Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Karieyh Sollerets</feet>
+			</set>
+			<set Name="MNDCHR">
+				<ammo>Hagneia Stone</ammo>
+				<head>Twilight Helm</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Windbuffet Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Phorcys Schuhs</feet>
+			</set>
+			<set Name="MultiVIT">
+				<ammo>Ravager's Orb</ammo>
+				<head>Twilight Helm</head>
+				<lear>Brutal Earring</lear>
+				<rear>Ravager's Earring</rear>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Windbuffet Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Karieyh Sollerets</feet>
+			</set>
+			<set Name="SingleCritSTR">
+				<ammo>Ravager's Orb</ammo>
+				<head>Twilight Helm</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Triumph Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Heafoc Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Aethling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Rvg. Calligae +2</feet>
+			</set>
+			<set Name="SingleSTR">
+				<ammo>Ravager's Orb</ammo>
+				<head>Mekira-oto +1</head>
+				<neck>Ravager's Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Triumph Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Heafoc Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Aethling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Karieyh Sollerets</feet>
+			</set>
+			<set Name="SingleSTRVIT">
+				<ammo>Ravager's Orb</ammo>
+				<head>Twilight Helm</head>
+				<neck>Fortitude Torque</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Triumph Earring</rear>
+				<body>Ares's Cuirass</body>
+				<hands>Heafoc Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Cuchulain's Mantle</back>
+				<waist>Piplaka Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Karieyh Sollerets</feet>
+			</set>
+			<set Name="SingleSTRDEX">
+				<ammo>Ravager's Orb</ammo>
+				<head>Twilight Helm</head>
+				<neck>Ravager's Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Triumph Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Rvg. Mufflers +2</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Cuchulain's Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Karieyh Sollerets</feet>
+			</set>
+		</group>
+		<group Name="GreatAxe" Inherit="Shared" Default="yes">
+			<set Name="Idle">
+				<ammo>Ravager's Orb</ammo>
+				<head>Phorcys Salade</head>
+				<neck>Ravager's Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Ravager's Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Phos Belt</waist>
+				<legs>Rvg. Cuisses +2</legs>
+				<feet>Rvg. Calligae +2</feet>
+			</set>
+			<set Name="IdleRestraint">
+				<ammo>Ravager's Orb</ammo>
+				<head>Phorcys Salade</head>
+				<neck>Ravager's Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Ravager's Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Rvg. Mufflers +2</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Phos Belt</waist>
+				<legs>Rvg. Cuisses +2</legs>
+				<feet>Rvg. Calligae +2</feet>
+			</set>
+		</group>
+		<group Name="Tools">
+			<set Name="Weapons">
+				<main>Twilight Knife</main>
+				<main>Joyeuse</main>
+				<main>Ragnarok</main>
+				<main>Gibbous Axe</main>
+				<main>Laceratrice</main>
+				<main>Bahamut Zaghnal</main>
+				<main>Quint Spear</main>
+				<main>Horrant Mace</main>
+				<main>Chantoyant Staff</main>
+				<sub>Claymore Grip</sub>
+				<sub>Pole Grip</sub>
+			</set>
+			<set Name="Misc">
+				<item>Ylw. Curry Bun</item>
+				<body>Rvg. Lorica +2</body>
+				<neck>Breeze Gorget</neck>
+				<neck> Rancor Collar</neck>
+				<waist>Breeze Belt</waist>
+				<neck>Light Gorget</neck>
+				<waist>Light Belt</waist>
+			</set>
+		</group>
+	</sets>
+	<variables>
+		<var Name="UtsusemiNi">0</var>
+	</variables>
+	<rules>
+		<if Group="GreatAxe">
+			<!-- ................................................................... -->
+			<if buffactive="Restraint">
+				<equip When="AfterCast|Engaged" Set="IdleRestraint" />
+			</if>
+			<elseif buffnotactive="Restraint">
+				<equip When="AfterCast|Engaged" Set="Idle" />
+			</elseif>
+			<!-- ................................................................... -->
+			<if Spell="Utsusemi*">
+				<equip Set="FastCast" />
+				<equip When="MidCast" Set="Haste" />
+				<if Spell="*Ichi" Advanced='"$UtsusemiNi"="1"' BuffActive="Copy Image">
+					<midcastdelay Delay="3.0" />
+					<command When="MidCast">cancel 66</command>
+					<var CMD="set UtsusemiNi 0" />
+				</if>
+				<elseif Spell="*Ni">
+					<var CMD="set UtsusemiNi 1" />
+				</elseif>
+			</if>
+			<!-- ................................................................... -->
+			<elseif Spell="Invisible" SpellTargetType="Self">
+				<if SubJob="NIN">
+					<if SLvlLT="34">
+						<changespell Spell="Tonko: Ichi" />
+					</if>
+					<else>
+						<changespell Spell="Tonko: Ni" />
+					</else>
+				</if>
+				<elseif SubJob="DNC">
+					<if BuffActive="Sneak">
+						<command>cancel 71</command>
+					</if>
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Sneak" SpellTargetType="Self">
+				<if BuffActive="Sneak">
+					<command>cancel 71</command>
+				</if>
+				<if SubJob="NIN">
+					<changespell Spell="Monomi: Ichi" />
+				</if>
+				<elseif SubJob="DNC">
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Raging Rush|Vorpal Blade|Rampage">
+				<equip Set="MultiCritSTR" />
+			</elseif>
+			<elseif Spell="Resolution">
+				<equip Set="MultiSTR">
+					<neck>Breeze Gorget</neck>
+					<waist>Breeze Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Scourge">
+				<equip Set="MNDCHR">
+					<neck>Light Gorget</neck>
+					<waist>Light Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Evisceration">
+				<equip Set="MultiCritDEX" />
+			</elseif>
+			<elseif Spell="King's Justice|Impulse Drive">
+				<equip Set="MultiSTR" />
+			</elseif>
+			<elseif Spell="Penta Thrust">
+				<equip Set="MultiSTRDEX" />
+			</elseif>
+			<elseif Spell="Stardiver">
+				<equip Set="MultiSTR">
+				</equip>
+			</elseif>
+			<elseif Spell="Upheaval">
+				<equip Set="MultiVIT">
+				</equip>
+			</elseif>
+			<elseif Spell="True Strike">
+				<equip Set="SingleCritSTR">
+					<neck>Breeze Gorget</neck>
+					<waist>Breeze Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Fell Cleave|Ground Strike">
+				<equip Set="SingleSTR">
+					<neck>Breeze Gorget</neck>
+					<waist>Breeze Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Steel Cyclone">
+				<equip Set="SingleSTRVIT">
+					<neck>Breeze Gorget</neck>
+					<waist>Breeze Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Sonic Thrust">
+				<equip Set="SingleSTRDEX">
+				</equip>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Retaliation">
+				<equip>
+					<feet>Rvg. Calligae +2</feet>
+				</equip>
+			</elseif>
+			<elseif Spell="Blood Rage">
+				<equip>
+					<body>Rvg. Lorica +2</body>
+				</equip>
+			</elseif>
+		</if>
+	</rules>
+</spellcast>

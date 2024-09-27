@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+    <config
+        Debug="false"
+        HideErrors="false"
+        ShowSpellInfo="false"
+        ShowGearSwaps="false"
+        />
+    <variables clear="false">
+        <var name="SkillUp">1</var>
+    </variables>
+    <sets>
+        <group default="yes" name="Job">
+            <set name = "Standard" />
+            <set name="Resting">
+                <main>Pluto's Staff</main>
+                <ammo>Clarus Stone</ammo>
+                <waist>Austerity Belt</waist>
+                <body>Mahatma Hpl.</body>
+                <neck>Eidolon Pendant</neck>
+                <lear>Antivenom Earring</lear>
+                <rear>Boroka Earring</rear>
+                <back>Felicitas Cape</back>
+                <legs>Sagacity Lappas</legs>
+                <feet>Avocat Pigaches</feet>
+            </set>
+        </group>
+    </sets>
+    <rules>
+ 
+        <equip when="resting" set="Resting" />
+         
+         <if NOTMPGT="100">
+            <command when="precast">input /heal on;wait 180;input /heal off;wait 3;input /ma "Indi-Fury"</command>
+        </if>
+         
+        <if spell="Geo1">
+            <if advanced='"$SkillUp" == "1"'>
+                <command when="aftercast">wait 2;input /ma "Indi-Paralysis"</command>
+            </if>
+        </if>
+        <elseif spell="Geo2">
+            <if advanced='"$SkillUp" == "1"'>
+                <command when="aftercast">wait 2;input /ma "Indi-Fend"</command>
+            </if>
+        </elseif>
+        <elseif spell="Geo3">
+            <if advanced='"$SkillUp" == "1"'>
+                <command when="aftercast">wait 2;input /ma "Indi-Refresh"</command>
+            </if>
+        </elseif>
+        <elseif spell="Geo4">
+            <if advanced='"$SkillUp" == "1"'>
+                <command when="aftercast">wait 2;input /ma "Geo-Refresh"</command>
+            </if>
+        </elseif>
+        <elseif spell="Geo5">
+            <if advanced='"$SkillUp" == "1"'>
+                <command when="aftercast">wait 2;input /ma "Indi-Slip"</command>
+            </if>
+        </elseif>
+        <elseif spell="Geo6">
+            <if advanced='"$SkillUp" == "1"'>
+                    <command when="aftercast"> wait 2;input /ma "Indi-Fury"</command>
+            </if>
+        </elseif>
+         
+    </rules>
+</spellcast>

@@ -1,0 +1,247 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+	<config
+		Debug="False"
+		ShowGearSwaps="False"
+		ShowSpellInfo="False"
+		RequireVersion="2.45"
+	/>
+	<sets>
+		<group Name="Shared">
+			<set Name="FastCast" BaseSet="Idle">
+				<neck>Magoraga Beads</neck>
+				<lear>Loquac. Earring</lear>
+				<hands>Thaumas Gloves</hands>
+				<lring>Prolix Ring</lring>
+				<legs>Homam Cosciales</legs>
+			</set>
+			<set Name="Enmity" BaseSet="Idle">
+				<hands>Asn. Armlets +2</hands>
+				<legs>Ocelot Trousers</legs>
+				<feet>Asn. Poulaines +2</feet>
+			</set>
+			<set Name="Standing-TH" BaseSet="Idle">
+				<range>Raider's Bmrng.</range>
+				<head>Raid. Bonnet +2</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Suppanomimi</rear>
+				<body>Thaumas Coat</body>
+				<hands>Asn. Armlets +2</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Epona's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Twilight Belt</waist>
+				<legs>Raid. Culottes +2</legs>
+				<feet>Raid. Poulaines +2</feet>
+			</set>
+			<set Name="MultiCritDEX">
+				<head>Ocelo. Headpiece</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Toci's Harness</body>
+				<hands>Raid. Armlets +2</hands>
+				<lring>Thundersoul Ring</lring>
+				<rring>Thundersoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Chiner's Belt</waist>
+				<legs>Raid. Culottes +2</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="MultiAGI">
+				<head>Thaumas Hat</head>
+				<neck>Justiciar's Torque</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Ghillie Earring +1</rear>
+				<body>Thurandaut Tabard</body>
+				<hands>Myrmex Mittens</hands>
+				<lring>Stormsoul Ring</lring>
+				<rring>Stormsoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Anguinus Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="SingleDEX">
+				<head>Ocelo. Headpiece</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Delta Earring</rear>
+				<body>Toci's Harness</body>
+				<hands>Raid. Armlets +2</hands>
+				<lring>Thundersoul Ring</lring>
+				<rring>Thundersoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Chiner's Belt</waist>
+				<legs>Raid. Culottes +2</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="MagicAttackWS">
+				<head>Thaumas Hat</head>
+				<neck>Breeze Gorget</neck>
+				<lear>Hecate's Earring</lear>
+				<rear>Novio Earring</rear>
+				<body>Toci's Harness</body>
+				<hands>Raid. Armlets +2</hands>
+				<lring>Thundersoul Ring</lring>
+				<rring>Thundersoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Breeze Belt</waist>
+				<legs>Raid. Culottes +2</legs>
+				<feet>Athos's Boots</feet>
+			</set>
+			<set Name="SneakAttack" BaseSet="Idle">
+				<head>Ocelo. Headpiece</head>
+				<rear>Delta Earring</rear>
+				<body>Loki's Kaftan</body>
+				<hands>Raid. Armlets +2</hands>
+				<lring>Thundersoul Ring</lring>
+				<rring>Thundersoul Ring</rring>
+				<waist>Chiner's Belt</waist>
+				<legs>Raid. Culottes +2</legs>
+				<feet>Athos's Boots</feet>
+			</set>
+			<set Name="TrickAttack" BaseSet="Idle">
+				<head>Thaumas Hat</head>
+				<neck>Houyi's Gorget</neck>
+				<rear>Suppanomimi</rear>
+				<body>Loki's Kaftan</body>
+				<hands>Murzim Manopolas</hands>
+				<lring>Stormsoul Ring</lring>
+				<rring>Stormsoul Ring</rring>
+				<legs>Ambusher's Hose</legs>
+				<feet>Raid. Poulaines +2</feet>
+			</set>
+		</group>
+		<group Name="Dagger" Inherit="Shared" Default="yes">
+			<set Name="Idle">
+				<range>Raider's Bmrng.</range>
+				<head>Raid. Bonnet +2</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Suppanomimi</rear>
+				<body>Thaumas Coat</body>
+				<hands>Murzim Manopolas</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Epona's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Twilight Belt</waist>
+				<legs>Raid. Culottes +2</legs>
+				<feet>Asn. Poulaines +2</feet>
+			</set>
+		</group>
+		<group Name="thf-evasion" Inherit="darkknight" Default="yes">
+			<set Name="Idle">
+				<head>Ocelo. Headpiece</head>
+				<body>Alcide's Harness</body>
+				<hands>Ocelot Gloves</hands>
+				<legs>Ocelot Trousers</legs>
+				<feet>Athos's Boots</feet>
+			</set>
+		</group>
+		<group Name="Tools">
+			<set Name="Misc">
+				<item>Ylw. Curry Bun</item>
+				<main>Aluh Jambiya</main>
+				<main>Thief's Knife</main>
+				<body>Raider's Vest +2</body>
+				<main>Warp Cudgel</main>
+				<neck>Breeze Gorget</neck>
+				<waist>Breeze Belt</waist>
+			</set>
+		</group>
+	</sets>
+	<variables>
+		<var Name="UtsusemiNi">0</var>
+	</variables>
+	<rules>
+		<if Group="Dagger">
+			<!-- ................................................................... -->
+			<if Spell="Utsusemi*">
+				<equip Set="FastCast" />
+				<equip When="MidCast" Set="Haste" />
+				<if Spell="*Ichi" Advanced='"$UtsusemiNi"="1"' BuffActive="Copy Image">
+					<midcastdelay Delay="3.0" />
+					<command When="MidCast">cancel 66</command>
+					<var CMD="set UtsusemiNi 0" />
+				</if>
+				<elseif Spell="*Ni">
+					<var CMD="set UtsusemiNi 1" />
+				<equip When="Aftercast" Set="Idle" />
+				</elseif>
+			</if>
+			<!-- ................................................................... -->
+			<elseif Spell="Invisible" SpellTargetType="Self">
+				<if SubJob="NIN">
+					<if SLvlLT="34">
+						<changespell Spell="Tonko: Ichi" />
+					</if>
+					<else>
+						<changespell Spell="Tonko: Ni" />
+					</else>
+				</if>
+				<elseif SubJob="DNC">
+					<if BuffActive="Sneak">
+						<command>cancel 71</command>
+					</if>
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Sneak" SpellTargetType="Self">
+				<if BuffActive="Sneak">
+					<command>cancel 71</command>
+				</if>
+				<if SubJob="NIN">
+					<changespell Spell="Monomi: Ichi" />
+				</if>
+				<elseif SubJob="DNC">
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Evisceration">
+				<equip Set="MultiCritDEX" />
+				<equip When="Aftercast" Set="Idle" />
+			</elseif>
+			<elseif Spell="Exenterator">
+				<equip Set="MultiAGI" />
+				<equip When="Aftercast" Set="Idle" />
+			</elseif>
+			<elseif Spell="Mandalic Stab|Shark Bite|Dancing Edge|Viper Bite|Wasp Sting">
+				<equip Set="singleDEX" />
+				<equip When="Aftercast" Set="Idle" />
+			</elseif>
+			<elseif Spell="Aeolian Edge|Energy Drain|Energy Steal|Cyclone|Gust Slash">
+				<equip Set="MagicAttackWS" />
+				<equip When="Aftercast" Set="Idle" />
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Despoil">
+				<equip>
+					<legs>Raid. Culottes +2</legs>
+					<feet>Raid. Poulaines +2</feet>
+				</equip>
+				<equip When="Aftercast" Set="Idle" />
+			</elseif>
+			<elseif Spell="Accomplice|Collaborator">
+				<equip Set="Enmity">
+					<head>Raid. Bonnet +2</head>
+				</equip>
+				<equip When="Aftercast" Set="Idle" />			
+			</elseif>	
+			<elseif Spell="Assassin's Charge">
+				<equip>
+					<feet>Asn. Poulaines +2</feet>
+				</equip>
+			</elseif>			
+			<elseif Spell="Sneak Attack">
+				<equip Set="SneakAttack" />
+			</elseif>
+			<elseif Spell="Trick Attack">
+				<equip Set="TrickAttack" />
+			</elseif>
+		</if>
+	</rules>
+</spellcast>

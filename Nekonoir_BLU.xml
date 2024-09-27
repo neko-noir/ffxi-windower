@@ -1,0 +1,290 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+	<config
+		Debug="False"
+		ShowGearSwaps="False"
+		ShowSpellInfo="False"
+		RequireVersion="2.45"
+	/>
+	<sets>
+		<group Name="Shared">
+			<!---
+				BLU/NIN Spells:
+				+Benthic Typhoon, Delta Trust, Heavy Strike, Sudden Lunge, Quadrastrike, Amorphic Spikes
+				+Animating Wail, Battery Charge, Cocoon, Occultation, Magic Fruit, Winds Of Promyvion
+				+Uppercut, Battle Dance, Empty Thrash, Fantod, Actinic Burst
+				=Store TP, Double Attack, Auto Refresh, Attack Bonus, Skillchain Bonus
+				
+				BLU/WAR Spells:
+				+Quad. Continuum, Delta Thrust, Heavy Strike, Sudden Lunge, Amorphic Spikes, Barbed Crescent
+				+Animating Wail, Battery Charge, Cocoon, Occultation, Magic Fruit, Winds Of Promyvion
+				+Empty Thrash, Acrid Stream, Fantod, Blazing Bound, Mortal Ray, Actinic Burst
+				=Store TP, Triple Attack, Auto Refresh, Dual Wield III
+			--->
+			<set Name="FastCast" BaseSet="Idle">
+				<lear>Loquac. Earring</lear>
+				<body>Mavi Mintan +2</body>
+				<hands>Thaumas Gloves</hands>
+				<lring>Prolix Ring</lring>
+				<back>Swith Cape</back>
+				<waist>Witful Belt</waist>
+				<legs>Orvail Pants</legs>
+				<feet>Chelona Boots</feet>
+			</set>
+			<set Name="Standing" BaseSet="Idle">
+				<range>Mavi Tathlum</range>
+				<head>Ocelo. Headpiece</head>
+				<neck>Twilight Torque</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Suppanomimi</rear>
+				<body>Morrigan's Robe +1</body>
+				<hands>Serpentes Cuffs</hands>
+				<lring>Sheltered Ring</lring>
+				<rring>Paguroidea Ring</rring>
+				<back>Umbra Cape</back>
+				<waist>Twilight Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Serpentes Sabots</feet>
+			</set>
+			<set Name="MultiCritSTR">
+				<head>Thaumas Hat</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Thurandaut Tabard</body>
+				<hands>Myrmex Mittens</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="MultiSTR">
+				<head>Thaumas Hat</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Thurandaut Tabard</body>
+				<hands>Myrmex Mittens</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="BLUmultiSTR">
+				<head>Mirage Keffiyeh</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Magus Jubbah +1</body>
+				<hands>Myrmex Mittens</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Mavi Tayt +2</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="BLUAGI">
+				<head>Mirage Keffiyeh</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Magus Jubbah +1</body>
+				<hands>Thaumas Gloves</hands>
+				<lring>Stormsoul Ring</lring>
+				<rring>Stormsoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Anguinus Belt</waist>
+				<legs>Mavi Tayt +2</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="BLUDEX">
+				<head>Mirage Keffiyeh</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Magus Jubbah +1</body>
+				<hands>Thaumas Gloves</hands>
+				<lring>Thundersoul Ring</lring>
+				<rring>Thundersoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Mavi Tayt +2</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+			<set Name="MagicAttackWS">
+				<head>Thaumas Hat</head>
+				<neck>Stoicheion Medal</neck>
+				<lear>Hecate's Earring</lear>
+				<rear>Novio Earring</rear>
+				<body>Morrigan's Robe +1</body>
+				<hands>Mv. Bazubands +2</hands>
+				<lring>Strendu Ring</lring>
+				<rring>Epona's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Mavi Basmak +1</feet>
+			</set>
+			<set Name="ConserveMP">
+				<head>Ocelo. Headpiece</head>
+				<lear>Magnetic Earring</lear>
+				<body>Hedera Cotehardie</body>
+				<hands>Thaumas Gloves</hands>
+				<waist>Twilight Belt</waist>
+				<legs>Thaumas Kecks</legs>
+			</set>
+			<set Name="CurePotency">
+				<head>Ocelo. Headpiece</head>
+				<neck>Phalaina Locket</neck>
+				<lear>Magnetic Earring</lear>
+				<body>Hedera Cotehardie</body>
+				<hands>Serpentes Cuffs</hands>
+				<back>Swith Cape</back>
+				<waist>Twilight Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Serpentes Sabots</feet>
+			</set>
+			<set Name="BLUskill">
+				<ammo>Mavi Tathlum</ammo>
+				<head>Mirage Keffiyeh</head>
+				<body>Magus Jubbah +1</body>
+				<legs>Mavi Tayt +2</legs>
+			</set>				
+			<set Name="Evasion" BaseSet="Idle">
+				<head>Ocelo. Headpiece</head>
+				<body>Alcide's Harness</body>
+				<hands>Ocelot Gloves</hands>
+				<legs>Ocelot Trousers</legs>
+				<feet>Athos's Boots</feet>
+			</set>
+		</group>
+		<group Name="Sword" Inherit="Shared" Default="yes">
+			<set Name="Idle">
+				<range>Mavi Tathlum</range>
+				<head>Mavi Kavuk +2</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Suppanomimi</rear>
+				<body>Thaumas Coat</body>
+				<hands>Thaumas Gloves</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Epona's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Twilight Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+		</group>
+	</sets>
+	<variables>
+		<var Name="FireAccuracy">Chatoyant Staff</var>
+		<var Name="IceAccuracy">Vourukasha I</var>
+		<var Name="WindAccuracy">ChatoyantStaff</var>
+		<var Name="EarthAccuracy">Chatoyant Staff</var>
+		<var Name="ThunderAccuracy">Chatoyant Staff</var>
+		<var Name="WaterAccuracy">Chatoyant Staff</var>
+		<var Name="LightAccuracy">Chatoyant Staff</var>
+		<var Name="DarkAccuracy">Chatoyant Staff</var>
+
+		<var Name="FireDamage">Chatoyant Staff</var>
+		<var Name="IceDamage">Vourukasha I</var>
+		<var Name="WindDamage">Chatoyant Staff</var>
+		<var Name="EarthDamage">Chatoyant Staff</var>
+		<var Name="ThunderDamage">Chatoyant Staff</var>
+		<var Name="WaterDamage">Chatoyant Staff</var>
+		<var Name="LightDamage">Chatoyant Staff</var>
+		<var Name="DarkDamage">Chatoyant Staff</var>
+
+		<var Name="HaveFireObi">0</var>
+		<var Name="HaveIceObi">1</var>
+		<var Name="HaveWindObi">0</var>
+		<var Name="HaveEarthObi">0</var>
+		<var Name="HaveThunderObi">1</var>
+		<var Name="HaveWaterObi">0</var>
+		<var Name="HaveLightObi">0</var>
+		<var Name="HaveDarkObi">1</var>
+
+		<var Name="FireObi">Karin Obi</var>
+		<var Name="IceObi">Hyorin Obi</var>
+		<var Name="WindObi">Furin Obi</var>
+		<var Name="EarthObi">Dorin Obi</var>
+		<var Name="ThunderObi">Rairin Obi</var>
+		<var Name="WaterObi">Suirin Obi</var>
+		<var Name="LightObi">Korin Obi</var>
+		<var Name="DarkObi">Anrin Obi</var>
+	</variables>
+	<rules>
+		<if Group="Sword">
+			<!-- Conditions........................................ -->
+			<equip When="Idle" Set="Standing" />
+			<equip When="Engaged|Aftercast" Set="Idle" />
+			<if CommandPrefix="/magic|/ninjutsu|/bluemagic">
+				<equip Set="FastCast">
+					<if buffactive="Chain Affinity">
+						<equip>
+							<head>Mavi Kavuk +2</head>
+						</equip>
+					</if>
+				</equip>
+			</if>
+			<!-- Magic Spells....................................... -->
+			<if Spell="Benthic Typhoon|Sudden Lunge">
+				<equip Set="BLUAGI">
+					<if buffactive="Chain Affinity">
+						<equip>
+							<head>Mavi Kavuk +2</head>
+						</equip>
+					</if>
+				</equip>
+			</if>
+			<if Spell="Heavy Thrust|Quadrastrike|Empty Thrash|Delta Thrust|Quad. Continuum">
+				<equip Set="BLUmultiSTR">
+					<if buffactive="Chain Affinity">
+						<equip>
+							<head>Mavi Kavuk +2</head>
+						</equip>
+					</if>
+				</equip>
+			</if>
+			<if Spell="Amorphic Spikes|Barbed Crescent">
+				<equip Set="BLUDEX">
+					<if buffactive="Chain Affinity">
+						<equip>
+							<head>Mavi Kavuk +2</head>
+						</equip>
+					</if>
+				</equip>
+			</if>
+			<if Spell="Animating Wail|Battery Charge|Cocoon|Winds Of Promy.|Mortal Ray|Fantod">
+				<equip Set="ConserveMP"/>
+			</if>
+			<if Spell="Occultation">
+				<equip Set="BLUskill"/>
+			</if>
+			<if Spell="Magic Fruit">
+				<equip Set="CurePotency"/>
+			</if>
+			<if Spell="Acrid Stream|Charged Whisker">
+				<equip Set="MagicAttackWS"/>
+			</if>			
+			<!-- Weapon Skills........................................ -->
+			<elseif Spell="Vorpal Blade|Expiacion|Savage Blade|Fast Blade">
+				<equip Set="MultiCritSTR" />
+			</elseif>
+			<elseif Spell="Sanguine Blade|Seraph Blade|Shining Blade|Red Lotus Blade|Burning Blade">
+				<equip Set="MagicAttackWS" />
+			</elseif>
+			<!-- Job Abilities......................................... -->
+			<elseif Spell="Chain Affinity">
+				<equip>
+					<head>Mavi Kavuk +2</head>
+				</equip>
+			</elseif>
+		</if>
+	</rules>
+</spellcast>

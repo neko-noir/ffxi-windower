@@ -1,0 +1,374 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+	<config
+		Debug="False"
+		ShowGearSwaps="False"
+		ShowSpellInfo="False"
+		RequireVersion="2.45"
+	/>
+	<sets>
+		<group Name="darkknight">
+			<set Name="FastCast" BaseSet="Idle">
+				<lear>Loquac. Earring</lear>
+				<body>Nuevo Coselete</body>
+				<lring>Prolix Ring</lring>
+				<legs>Homam Cosciales</legs>
+			</set>
+			<set Name="Haste" BaseSet="Idle">
+				<head>Bale Burgeonet +2</head>
+				<body>Porthos Brynie</body>				
+				<hands>Bale Gauntlets +2</hands>
+				<waist>Goading Belt</waist>
+				<legs>Calmecac Trousers</legs>
+				<feet>Ace's Leggings</feet>
+			</set>
+			<set Name="Standing" BaseSet="Idle">
+				<head>Ogier's Helm</head>
+				<neck>Twilight Torque</neck>
+				<body>Mekira Meikogai</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Sheltered Ring</lring>
+				<rring>Paguroidea Ring</rring>
+				<back>Mollusca Mantle</back>
+				<waist>Nierenschutz</waist>
+				<legs>Inmicus Cuisses</legs>
+				<feet>Phorcys Schuhs</feet>
+			</set>
+			<set Name="MultiSTR">
+				<ammo>Fracas Grenade</ammo>
+				<head>Mekira-oto +1</head>
+				<neck>Bale Choker</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Karieyh Brayettes</legs>
+				<feet>Karieyh Sollerets</feet>
+			</set>
+			<!--<set Name="STRINT">
+				<ammo>Fracas Grenade</ammo>
+				<head>Drachenhorn</head>
+				<neck>Bale Choker</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Anguinus Belt</waist>
+				<legs>Bale Flanchard +2</legs>
+				<feet>Dilaram's Sollerets</feet>
+			</set>-->
+			<set Name="MNDCHR">
+				<ammo>Hagneia Stone</ammo>
+				<head>Twilight Helm</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Light Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Phorcys Schuhs</feet>
+			</set>
+			<set Name="MulticritSTR">
+				<ammo>Fracas Genade</ammo>
+				<head>Mekira-oto +1</head>
+				<neck>Bale Choker</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Bale Cuirass +2</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Bale Flanchard +2</legs>
+				<feet>Bale Sollerets +2</feet>
+			</set>
+			<set Name="SingleSTR">
+				<ammo>Fracas Genade</ammo>
+				<head>Mekira-oto +1</head>
+				<neck>Bale Choker</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Heafoc Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Bale Flanchard +2</legs>
+				<feet>Bale Sollerets +2</feet>
+			</set>
+			<set Name="MagAttackWS">
+				<ammo>Fracas Genade</ammo>
+				<head>Mekira-oto +1</head>
+				<neck>Stoicheion</neck>
+				<lear>Novio Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Wanion Belt</waist>
+				<legs>Bale Flanchard +2</legs>
+				<feet>Bale Sollerets +2</feet>
+			</set>	
+			<set Name="DarkMagic">
+				<head>Appetence Crown</head>
+				<neck>Dark Torque</neck>
+				<lear>Hecate's Earring</lear>
+				<rear>Moldavite Earring</rear>
+				<body>Demon's Harness</body>
+				<hands>Pavor Gauntlets</hands>
+				<lring>Balrahn's Ring</lring>
+				<rring>Omega Ring</rring>
+				<back>Abyss Cape</back>
+				<waist>Anrin Obi</waist>
+				<legs>Bale Flanchard +2</legs>
+				<feet>Bale Sollerets +2</feet>				
+			</set>
+			<set Name="dreadspikes">
+				<head>Murzim Zucchetto</head>
+				<neck>Dark Torque</neck>
+				<lear>Hecate's Earring</lear>
+				<rear>Moldavite Earring</rear>
+				<body>Bale Cuirass +2</body>
+				<hands>Murzim Manopolas</hands>
+				<lring>Balrahn's Ring</lring>
+				<rring>Omega Ring</rring>
+				<back>Abyss Cape</back>
+				<waist>Goading Belt</waist>
+				<legs>Homam Cosciales</legs>
+				<feet>Ace's Leggings</feet>				
+			</set>			
+		</group>
+		<group Name="sub-war" Inherit="darkknight" Default="yes">
+			<set Name="Idle">
+				<ammo>Hagneia Stone</ammo>
+				<head>Phorcys Salade</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Bale Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Bale Gauntlets +2</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Goading Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Ace's Leggings</feet>
+			</set>
+		</group>	
+		<group Name="sub-sam" Inherit="darkknight">
+			<set Name="Idle">
+				<ammo>Hagneia Stone</ammo>
+				<head>Phorcys Salade</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Bale Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Bale Gauntlets +2</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Goading Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Ace's Leggings</feet>
+			</set>
+		</group>
+		<group Name="Scythe" Inherit="darkknight">
+			<set Name="Idle">
+				<ammo>Hagneia Stone</ammo>
+				<head>Bale Burgeonet +2</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Bale Earring</rear>
+				<body>Porthos Byrnie</body>
+				<hands>Bale Gauntlets +2</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Goading Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Phorcys Schuhs</feet>
+			</set>
+		</group>
+		<group Name="12haste" Inherit="darkknight">
+			<set Name="Idle">
+				<ammo>Hagneia Stone</ammo>
+				<head>Phorcys Salade</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Bale Earring</rear>
+				<body>Armada Hauberk</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Windbuffet Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Ace's Leggings</feet>
+			</set>
+		</group>
+		<group Name="Tools">
+			<set Name="Weapons">
+				<main>Hofud</main>
+				<main>Ragnarok</main>
+				<main>Twilight Scythe</main>
+				<main>Bahamut Zaghnal</main>
+				<main>Chatoyant Staff</main>
+				<main>Warp Cudgel</main>
+				<sub>Pole Grip</sub>
+			</set>
+			<set Name="Misc">
+				<item>Ylw. Curry Bun</item>
+				<feet>Chaos Sollerets</feet>
+				<feet>Abs. Sollerets +2</feet>
+				<hands>Chaos Gauntlets +1</hands>
+				<hands>Abs. Gauntlets +2</hands>
+				<body>Bale Cuirass +2</body>
+				<neck>Breeze Gorget</neck>
+				<waist>Breeze Belt</waist>
+				<neck>Light Gorget</neck>
+				<waist>Light Belt</waist>
+			</set>
+		</group>
+	</sets>
+	<variables>
+		<var Name="UtsusemiNi">0</var>
+	</variables>
+	<rules>
+		<if Group="sub-war|sub-sam|12haste|scythe">
+			<!-- ................................................................... -->
+			<equip When="AfterCast|Engaged" Set="Idle" />
+			<!-- ................................................................... -->
+			<if Skill="DarkMagic">
+				<equip When="PreCast" Set="FastCast" />
+				<equip When="MidCast" Set="DarkMagic" />
+				<if Spell="Absorb-TP">
+					<equip When="Midcast">
+						<hands>Bale Gauntlets +2</hands>
+					</equip>
+				</if>
+				<if Spell="Dread Spikes">
+					<equip When="MidCast" Set="dreadspikes" />
+				</if>
+			</if>
+			<!-- ................................................................... -->
+			<if Spell="Utsusemi*">
+				<equip Set="FastCast" />
+				<equip When="MidCast" Set="Haste" />
+				<if Spell="*Ichi" Advanced='"$UtsusemiNi"="1"' BuffActive="Copy Image">
+					<midcastdelay Delay="3.0" />
+					<command When="MidCast">cancel 66</command>
+					<var CMD="set UtsusemiNi 0" />
+				</if>
+				<elseif Spell="*Ni">
+					<var CMD="set UtsusemiNi 1" />
+				</elseif>
+			</if>
+			<!-- ................................................................... -->
+			<elseif Spell="Invisible" SpellTargetType="Self">
+				<if SubJob="NIN">
+					<if SLvlLT="34">
+						<changespell Spell="Tonko: Ichi" />
+					</if>
+					<else>
+						<changespell Spell="Tonko: Ni" />
+					</else>
+				</if>
+				<elseif SubJob="DNC">
+					<if BuffActive="Sneak">
+						<command>cancel 71</command>
+					</if>
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Sneak" SpellTargetType="Self">
+				<if BuffActive="Sneak">
+					<command>cancel 71</command>
+				</if>
+				<if SubJob="NIN">
+					<changespell Spell="Monomi: Ichi" />
+				</if>
+				<elseif SubJob="DNC">
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Resolution|Upheaval">
+				<equip Set="MultiSTR">
+					<neck>Breeze Gorget</neck>
+					<waist>Breeze Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Scourge">
+				<equip Set="MNDCHR">
+					<neck>Light Gorget</neck>
+					<waist>Light Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Guillotine|Sickle Moon">
+				<equip Set="MultiSTR" />
+			</elseif>
+			<elseif Spell="Insurgency">
+				<equip Set="STRINT" />
+			</elseif>
+			<elseif Spell="Raging Rush|Vorpal Blade">
+				<equip Set="MulticritSTR" />
+			</elseif>
+			<elseif Spell="Fell Cleave|Ground Strike|Spinning Slash">
+				<equip Set="SingleSTR">
+					<neck>Breeze Gorget</neck>
+					<waist>Breeze Belt</waist>
+				</equip>
+			</elseif>
+			<elseif Spell="Spiral Hell|Cross Reaper|Vorpal Scythe|Spinning Scythe|Nightmare Scythe|Slice|Cresent Moon|Power Slash|Hard Slash">
+				<equip Set="SingleSTR">
+				</equip>
+			</elseif>
+			<elseif Spell="Infernal Scythe|Nightmare Scythe|Dark Harvest|Herculean Slash|Freezebite|Frostbite">
+				<equip Set="MagAttackWS">
+				</equip>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Weapon Bash">
+				<equip>
+					<hands>Chaos Gauntlets +1</hands>
+				</equip>
+			</elseif>
+			<elseif Spell="Last Resort">
+				<equip>
+					<feet>Abs. Sollerets +2</feet>
+				</equip>
+			</elseif>
+			<elseif Spell="Diabolic Eye">
+				<equip>
+					<hands>Abs. Gauntlets +2</hands>
+				</equip>
+			</elseif>
+			<elseif Spell="Nether Void">
+				<equip>
+					<legs>Bale Flanchard +2</legs>
+				</equip>
+			</elseif>
+			<elseif Spell="Arcane Circle">
+				<equip>
+					<feet>Chaos Sollerets</feet>
+				</equip>
+			</elseif>
+		</if>
+	</rules>
+</spellcast>

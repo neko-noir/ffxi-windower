@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+	<config
+		Debug="False"
+		ShowGearSwaps="False"
+		ShowSpellInfo="False"
+		RequireVersion="2.45"
+	/>
+	<sets>
+		<group Name="Shared">
+			<set Name="FastCast" BaseSet="Idle">
+				<neck>Magoraga Beads</neck>
+				<lear>Loquac. Earring</lear>
+				<hands>Thaumas Gloves</hands>
+				<lring>Prolix Ring</lring>
+				<legs>Orvail Pants</legs>
+				<feet>Chelona Boots</feet>	
+			</set>
+			<set Name="Enmitycast" BaseSet="Idle">
+				<head>Ocelo. Headpiece</head>
+				<rear>Magnetic Earring</rear>
+				<body>Hedera Cotehardie</body>
+				<hands>Ocelot Gloves</hands>
+				<back>Mollusca Mantle</back>
+				<waist>Twilight Belt</waist>
+				<legs>Ocelot Trousers</legs>
+				<feet>Athos's Boots</feet>
+			</set>
+			<set Name="Enmity" BaseSet="Idle">
+				<hands>Ocelot Gloves</hands>
+				<legs>Ocelot Trousers</legs>
+			</set>			
+			<set Name="MagAtkEnmity" BaseSet="Idle">
+				<head>Thaumas Hat</head>
+				<neck>Stoicheion Medal</neck>
+				<lear>Novio Earring</lear>
+				<rear>Hecate's Earring</rear>
+				<lring>Balrahn's Ring</lring>
+				<rring>Omega Ring</rring>
+			</set>
+			<set Name="MultiSTR" BaseSet="Idle">
+				<head>Thaumas Hat</head>
+				<neck>Breeze Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Toci's Harness</body>
+				<hands>Myrmex Mittens</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Breeze Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+		</group>
+		<group Name="GreatSword" Inherit="Shared" Default="yes">
+			<set Name="Idle">
+				<ammo>Hagneia Stone</ammo>
+				<head>Ocelo. Headpiece</head>
+				<neck>Houyi's Gorget</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Kemas Earring</rear>
+				<body>Thaumas Coat</body>
+				<hands>Thaumas Gloves</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Epona's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Twilight Belt</waist>
+				<legs>Thaumas Kecks</legs>
+				<feet>Thaumas Nails</feet>
+			</set>
+		</group>
+		<group Name="Tools">
+			<set Name="Misc">
+				<item>Ylw. Curry Bun</item>
+				<main>Hoarfrost Blade</main>
+				<sub>Pole Grip</sub>
+				<main>Warp Cudgel</main>
+				<neck>Breeze Gorget</neck>
+				<waist>Breeze Belt</waist>
+			</set>
+		</group>
+	</sets>
+	<variables>
+		<var Name="UtsusemiNi">0</var>
+	</variables>
+	<rules>
+		<if Group="GreatSword">
+			<!-- ................................................................... -->
+			<equip When="AfterCast|Engaged" Set="Idle" />
+			<!-- ................................................................... -->
+			<if Spell="Utsusemi*">
+				<equip Set="FastCast" />
+				<equip When="MidCast" Set="Haste" />
+			</if>
+			<!-- ................................................................... -->
+			<if Type="WhiteMagic|BlackMagic">
+				<equip Set="FastCast" />
+				<equip When="MidCast" Set="Enmitycast" />
+			</if>
+			<!-- ................................................................... -->
+			<if Spell="Resolution">
+				<equip Set="MultiSTR">
+					<neck>Breeze Gorget</neck>
+					<waist>Breeze Belt</waist>
+				</equip>
+			</if>
+			<!-- ................................................................... -->
+			<if Spell="Lunge">
+				<equip Set="MagAtkEnmity" />
+			</if>
+			<if Spell="Third Eye|Meditate|Warding Circle|Hasso|Seigan|Ignis|Gelus|Flabra|Tellus|Sulpor|Unda|Lux|Tenebrae|Swordplay|Embolden|One For All|Vallation|Pflug|Valiance|Liement|Gambit">
+				<equip Set="Enmity" />
+			</if>
+		</if>
+	</rules>
+</spellcast>

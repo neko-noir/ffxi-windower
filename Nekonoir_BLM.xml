@@ -1,0 +1,267 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+	<config
+		Debug="False"
+		ShowGearSwaps="False"
+		ShowSpellInfo="False"
+		RequireVersion="2.45"
+	/>
+	<sets>
+		<group Name="BlackMage" Default="Yes">
+			<set Name="FastCast">
+				<sub>Arbuda Grip</sub>
+				<head>Nares Cap</head>
+				<lear>Loquac. Earring</lear>
+				<body>Anhur Robe</body>
+				<hands>Repartie Gloves</hands>
+				<lring>Prolix Ring</lring>
+				<back>Swith Cape</back>
+				<waist>Witful Belt</waist>
+				<legs>Orvail Pants</legs>
+				<feet>Chelona Boots</feet>
+			</set>
+			<set Name="Standing">
+                <ammo>Memoria Sachet</ammo>
+                <head>Nefer Khat</head>
+                <neck>Twilight Torque</neck>
+                <lear>Loquac. Earring</lear>
+                <rear>Magnetic Earring</rear>
+                <body>Heka's Kalasiris</body>
+                <hands>Serpentes Cuffs</hands>
+				<lring>Paguroidea Ring</lring>
+				<rring>Balrahn's Ring</rring>
+				<back>Umbra Cape</back>
+                <waist>Witful Belt</waist>
+                <legs>Nares Trews</legs>
+                <feet>Serpentes Sabots</feet>
+			</set>
+			<set Name="RefreshStanding" BaseSet="Standing">
+				<main>Owleyes</main>
+				<!-- <main>Teiwaz</main> -->
+				<sub>Genbu's Shield</sub>
+			</set>
+			<set Name="INT" BaseSet="Standing">
+				<head>Nares Cap</head>
+				<rear>Aredan Ring</rear>
+				<body>Nares Saio</body>
+				<hands>Goetia Gloves +2</hands>
+				<lring>Icesoul Ring</lring>
+				<rring>Omega Ring</rring>
+				<legs>Rubeus Spats</legs>
+				<feet>Goetia Sabots +1</feet>
+			</set>
+			<set Name="INT-Enfeeble" BaseSet="INT">
+				<head>Nares Cap</head>
+				<neck>Stoicheion Medal</neck>
+				<lear>Goetia Earring</lear>
+				<rear>Aredan Earring</rear>
+				<body>Nares Saio</body>	
+				<lring>Balrahn's Ring</lring>
+				<rring>Omega Ring</rring>
+				<legs>Goet. Chausses +2</legs>
+				<feet>Nares Clogs</feet>
+			</set>
+			<set Name="MagicAttack" BaseSet="Standing">
+				<sub>Wizzan Grip</sub>
+				<ammo>Memoria Sachet</ammo>
+				<head>Nares Cap</head>
+				<neck>Stoicheion Medal</neck>
+				<lear>Hecate's Earring</lear>
+				<rear>Novio Earring</rear>
+                <body>Morrigan's Robe +1</body>
+				<hands>Nares Cuffs</hands>
+				<lring>Icesoul Ring</lring>
+				<rring>Strendu Ring</rring>
+				<back>Searing Cape</back>
+				<waist>Oneiros Sash</waist>
+				<legs>Goet. Chausses +2</legs>
+				<feet>Nares Clogs</feet>
+			</set>
+			<set Name="DarkMagic-Skill" BaseSet="Standing">
+				<sub>Caecus Grip</sub>
+				<ammo>Memoria Sachet</ammo>
+				<head>Appetence Crown</head>
+				<neck>Dark Torque</neck>
+				<lear>Aredan Earring</lear>
+				<body>Nares Saio</body>
+				<hands>Sorcerer's Gloves</hands>
+				<lring>Omega Ring</lring>
+				<rring>Balrahn's Ring</rring>
+				<waist>Anrin Obi</waist>
+				<legs>Goet. Chausses +2</legs>
+				<feet>Goetia Sabots +1</feet>
+			</set>
+			<set Name="Cure" BaseSet="Standing">
+				<sub>Arbuda Grip</sub>
+				<ammo>Clarus Stone</ammo>
+				<head>Cenobite's Coiffe</head>
+				<neck>Phalaina Locket</neck>
+				<lear>Aredan Earring</lear>
+				<rear>Magnetic Earring</rear>
+				<body>Heka's Kalasiris</body>
+				<hands>Serpentes Cuffs</hands>
+				<rring>Sirona's Ring</rring>
+				<waist>Witful Belt</waist>
+				<legs>Nares Trews</legs>
+				<feet>Serpentes Sabots</feet>
+			</set>
+			<set Name="hMP" BaseSet="Standing">
+				<main>Chatoyant Staff</main>
+				<sub>Arbuda Grip</sub>
+				<ammo>Clarus Stone</ammo>
+				<head>Goliard Chapeau</head>
+				<body>Chelona Blazer</body>
+				<hands>Nares Cuffs</hands>
+				<body>Errant Hpl.</body>
+				<legs>Sagacity Lappas</legs>
+				<feet>Chelona Boots</feet>
+			</set>
+			<set Name="Sublimation" BaseSet="Standing">
+				<main>Fourth Mace</main>
+				<sub>Genbu's Shield</sub>
+				<body>Hedera Cotehardie</body>
+				<hands>Serpentes Cuffs</hands>
+				<back>Twilight Cape</back>
+				<legs>Nares Trews</legs>
+				<feet>Nares</feet>
+			</set>
+			<set Name="Enhancing-Skill" BaseSet="Standing">
+				<main>Kirin's Pole</main>
+				<sub>Fulcio Grip</sub>
+				<neck>Colossus's Torque</neck>
+				<body>Anhur Robe</body>
+				<feet>Literae Sabots</feet>
+			</set>
+			<set Name="Conserve-MP" BaseSet="Standing">
+				<main>Fourth Mace</main>
+				<sub>Genbu's Shield</sub>
+				<ammo>Clarus Stone</ammo>
+				<rear>Magnetic Earring</rear>
+				<body>Hedera Cotehardie</body>
+			</set>
+			<set Name="Stoneskin" BaseSet="Enhancing-Skill">
+			</set>
+			<set Name="Melee" BaseSet="Standing">
+			</set>
+		</group>
+		<group Name="Tools">
+			<set Name="Weapons">
+				<main>Teiwaz</main>
+				<main>Vourukasha I</main>
+			</set>
+			<set Name="Armor">
+				<waist>Rairin Obi</waist>
+				<waist>Hyorin Obi</waist>
+				<waist>Anrin Obi</waist>
+				<back>Twilight Cape</back>
+			</set>
+		</group>
+	</sets>
+	<variables>
+		<var Name="FireAccuracy">Chatoyant Staff</var>
+		<var Name="IceAccuracy">Vourukasha I</var>
+		<var Name="WindAccuracy">ChatoyantStaff</var>
+		<var Name="EarthAccuracy">Chatoyant Staff</var>
+		<var Name="ThunderAccuracy">Chatoyant Staff</var>
+		<var Name="WaterAccuracy">Chatoyant Staff</var>
+		<var Name="LightAccuracy">Chatoyant Staff</var>
+		<var Name="DarkAccuracy">Chatoyant Staff</var>
+
+		<var Name="FireDamage">Chatoyant Staff</var>
+		<var Name="IceDamage">Vourukasha I</var>
+		<var Name="WindDamage">Chatoyant Staff</var>
+		<var Name="EarthDamage">Chatoyant Staff</var>
+		<var Name="ThunderDamage">Chatoyant Staff</var>
+		<var Name="WaterDamage">Chatoyant Staff</var>
+		<var Name="LightDamage">Chatoyant Staff</var>
+		<var Name="DarkDamage">Chatoyant Staff</var>
+
+		<var Name="HaveFireObi">0</var>
+		<var Name="HaveIceObi">1</var>
+		<var Name="HaveWindObi">0</var>
+		<var Name="HaveEarthObi">0</var>
+		<var Name="HaveThunderObi">1</var>
+		<var Name="HaveWaterObi">0</var>
+		<var Name="HaveLightObi">0</var>
+		<var Name="HaveDarkObi">1</var>
+
+		<var Name="FireObi">Karin Obi</var>
+		<var Name="IceObi">Hyorin Obi</var>
+		<var Name="WindObi">Furin Obi</var>
+		<var Name="EarthObi">Dorin Obi</var>
+		<var Name="ThunderObi">Rairin Obi</var>
+		<var Name="WaterObi">Suirin Obi</var>
+		<var Name="LightObi">Korin Obi</var>
+		<var Name="DarkObi">Anrin Obi</var>
+
+		<var Name="UtsusemiNi">0</var>
+	</variables>
+	<rules>
+		<!-- ................................................................... -->
+		<equip When="Idle|AfterCast" Set="RefreshStanding" />
+		<equip When="Resting" Set="hMP" />
+		<!-- ................................................................... -->
+		<if CommandPrefix="/magic|/ninjutsu">
+			<equip Set="FastCast" />
+			<if Skill="ElementalMagic">
+				<equip>
+					<main>$%spellelementDamage</main>
+				</equip>
+			</if>
+			<else>
+				<equip>
+					<main>$%spellelementAccuracy</main>
+				</equip>
+			</else>
+		</if>
+		<!-- ................................................................... -->
+		<if Skill="DarkMagic">
+			<equip When="MidCast" Set="DarkMagic-Skill" />
+		</if>
+		<!-- ................................................................... -->
+		<elseif Skill="ElementalMagic">
+			<equip When="MidCast" Set="MagicAttack" />
+		</elseif>
+		<!-- ................................................................... -->
+		<elseif Skill="EnfeeblingMagic">
+			<equip When="MidCast" Set="INT-Enfeeble" />
+		</elseif>
+		<!-- ................................................................... -->		
+		<elseif Skill="EnhancingMagic">
+			<if Spell="Haste|Refresh|*storm|Blink|Regen*|Prot*|Shel*|Invisible">
+				<equip When="Midcast" Set="Conserve-MP" />
+			</if>
+			<elseif Spell="Bar*|Aquaveil|Stoneskin|Phalanx|En*">
+				<equip When="MidCast" Set="Enhancing-Skill" />
+			</elseif>
+			<elseif Spell="Sneak" SpellTargetType="Self" BuffActive="Sneak">
+				<midcastdelay Delay="1" />
+				<command When="MidCast">cancel 71</command>
+			</elseif>
+			<elseif Spell="Stoneskin">
+				<equip When="MidCast" Set="Enhancing-Skill" />
+				<if BuffActive="Stoneskin">
+					<midcastdelay Delay="4.5" />
+					<command When="MidCast">cancel 37</command>
+				</if>
+			</elseif>
+		</elseif>
+		<!-- ................................................................... -->
+		<elseif Skill="HealingMagic">
+			<if Spell="Cur*">
+				<equip When="MidCast" Set="Cure" />
+			</if>
+		</elseif>
+		<!-- ................................................................... -->
+		<if Spell="Sublimation">
+			<equip Set="Sublimation" />
+		</if>
+		<!-- ................................................................... -->
+		<if Advanced='"%SpellElement"="%WeatherElement" OR "%SpellElement"="%DayElement" AND "$Have%spellElementObi"="1"' Element="Fire|Ice|Wind|Earth|Thunder|Water|Light|Dark">
+			<equip When="MidCast">
+				<waist>$%SpellElementObi</waist>
+				<back>Twilight Cape</back>
+			</equip>
+		</if>
+	</rules>
+</spellcast>

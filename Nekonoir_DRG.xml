@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<spellcast xmlns:xi="http://www.w3.org/2001/XInclude">
+	<config
+		Debug="False"
+		ShowGearSwaps="False"
+		ShowSpellInfo="False"
+		RequireVersion="2.45"
+	/>
+	<sets>
+		<group Name="Shared">
+			<set Name="FastCast" BaseSet="Idle">
+				<lear>Loquac. Earring</lear>
+				<body>Nuevo Coselete</body>
+				<lring>Prolix Ring</lring>
+				<legs>Homam Cosciales</legs>
+			</set>
+			<set Name="Haste" BaseSet="Idle">
+				<head>Phorcys Salade</head>
+				<body>Porthos Byrnie</body>
+				<waist>Goading Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Ace's Leggings</feet>
+			</set>
+			<set Name="Standing" BaseSet="Idle">
+				<head>Twilight Helm</head>
+				<neck>Twilight Torque</neck>
+				<body>Mekira Meikogai</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Sheltered Ring</lring>
+				<rring>Paguroidea Ring</rring>
+				<back>Mollusca Mantle</back>
+				<waist>Nierenschutz</waist>
+				<feet>Phorcys Schuhs</feet>
+			</set>
+			<set Name="Jumps">
+				<head>Mekira-oto +1</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Kemas Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Pipilaka Belt</waist>
+				<legs>Lncr. Cuissonts +2</legs>
+				<feet>Clout Boots</feet>
+			</set>
+			<set Name="MultiSTR">
+				<head>Drachenhorn</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Kemas Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Pipilaka Belt</waist>
+				<legs>Lncr. Cuissonts +2</legs>
+				<feet>Clout Boots</feet>
+			</set>
+			<set Name="MultiCritSTR">
+				<head>Mekira-oto +1</head>
+				<neck>Rancor Collar</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Kemas Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Pipilaka Belt</waist>
+				<legs>Lncr. Cuissonts +2</legs>
+				<feet>Clout Boots</feet>
+			</set>
+			<set Name="STR">
+				<head>Mekira-oto +1</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Kemas Earring</rear>
+				<body>Phorcys Korazin</body>
+				<hands>Phorcys Mitts</hands>
+				<lring>Pyrosoul Ring</lring>
+				<rring>Pyrosoul Ring </rring>
+				<back>Aethling Mantle</back>
+				<waist>Pipilaka Belt</waist>
+				<legs>Lncr. Cuissonts +2</legs>
+				<feet>Clout Boots</feet>
+			</set>
+		</group>
+		<group Name="Polearm" Inherit="Shared" Default="yes">
+			<set Name="Idle">
+				<ammo>Hagneia Stone</ammo>
+				<head>Phorcys Salade</head>
+				<neck>Ganesha's Mala</neck>
+				<lear>Brutal Earring</lear>
+				<rear>Lancer's Earring</rear>
+				<body>Porthos Byrnie</body>
+				<hands>Lncr. Vmbrc. +2</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's Ring</rring>
+				<back>Atheling Mantle</back>
+				<waist>Goading Belt</waist>
+				<legs>Phorcys Dirs</legs>
+				<feet>Ace's Leggings</feet>
+			</set>
+		</group>
+		<group Name="Tools">
+			<set Name="Weapons">
+				<main>Twilight Knife</main>
+				<main>Joyeuse</main>
+				<main>Kriegsmesser</main>
+				<main>Gibbous Axe</main>
+				<main>Laceratrice</main>
+				<main>Bahamut Zaghnal</main>
+				<main>Quint Spear</main>
+				<main>Horrant Mace</main>
+				<main>Chantoyant Staff</main>
+				<sub>Claymore Grip</sub>
+				<sub>Pole Grip</sub>
+			</set>
+			<set Name="Weapons">
+				<main>Drakaina Lance</main>
+				<sub>Pole Grip</sub>
+			</set>
+			<set Name="Misc">
+				<item>Ylw. Curry Bun</item>
+				<neck>Breeze Gorget</neck>
+				<neck>Rancor Collar</neck>
+				<waist>Soil Belt</waist>
+				<waist>Breeze Belt</waist>
+			</set>
+		</group>
+	</sets>
+	<variables>
+		<var Name="UtsusemiNi">0</var>
+	</variables>
+	<rules>
+		<if Group="Polearm">
+			<!-- ................................................................... -->
+			<equip When="AfterCast" Set="Idle" />
+			<!-- ................................................................... -->
+			<if Spell="Utsusemi*">
+				<equip Set="FastCast" />
+				<equip When="MidCast" Set="Haste" />
+				<if Spell="*Ichi" Advanced='"$UtsusemiNi"="1"' BuffActive="Copy Image">
+					<midcastdelay Delay="3.0" />
+					<command When="MidCast">cancel 66</command>
+					<var CMD="set UtsusemiNi 0" />
+				</if>
+				<elseif Spell="*Ni">
+					<var CMD="set UtsusemiNi 1" />
+				</elseif>
+			</if>
+			<!-- ................................................................... -->
+			<elseif Spell="Invisible" SpellTargetType="Self">
+				<if SubJob="NIN">
+					<if SLvlLT="34">
+						<changespell Spell="Tonko: Ichi" />
+					</if>
+					<else>
+						<changespell Spell="Tonko: Ni" />
+					</else>
+				</if>
+				<elseif SubJob="DNC">
+					<if BuffActive="Sneak">
+						<command>cancel 71</command>
+					</if>
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Sneak" SpellTargetType="Self">
+				<if BuffActive="Sneak">
+					<command>cancel 71</command>
+				</if>
+				<if SubJob="NIN">
+					<changespell Spell="Monomi: Ichi" />
+				</if>
+				<elseif SubJob="DNC">
+					<changespell Spell="Spectral Jig" />
+				</elseif>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Drakesbane">
+				<equip Set="MultiCritSTR" />
+			</elseif>
+			<elseif Spell="Penta Thrust|Skewer|Double Thrust">
+				<equip Set="MultiSTR">
+				</equip>
+			</elseif>
+			<elseif Spell="Stardiver">
+				<equip Set="MultiSTR">
+					<neck>Soil Gorget</neck>
+					<waist>Soil Belt</waist>
+				</equip>
+			</elseif>
+				<elseif Spell="Sonic Thrust|Wheeling Thrust|Vorpal Thrust|Leg Sweep|Raiden Thrust|Thunder Thrust">
+				<equip Set="STR">
+				</equip>
+			</elseif>
+			<!-- ................................................................... -->
+			<elseif Spell="Spirit Link">
+				<equip>
+					<hands>Lncr. Vmbrc. +2</hands>
+				</equip>
+			</elseif>
+			<elseif Spell="Jump|High Jump|Super Jump|Spirit Jump|Soul Jump">
+				<equip Set="Jumps" />
+			</elseif>
+		</if>
+	</rules>
+</spellcast>
